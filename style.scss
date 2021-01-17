@@ -1,0 +1,77 @@
+@import 'bootstrap/css/bootstrap.min.css';
+
+
+#background {
+    background: url("images/bg-pattern.jpg");
+}
+
+.logo{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.navigation{
+    background-repeat: no-repeat;
+    padding: 1px;
+    margin: 0 200px 20px;
+    height: 50px;
+    width: 940px;
+    
+    ul{
+        display: inline-block;
+        padding: 0px 0px 0px 40px;
+        li{
+           
+            float: left;
+            background-position: 0 -118px;
+            background-repeat: no-repeat;
+            height: 49px;
+            width: 122px;
+            margin: 0;
+            padding-left: 1px;
+           
+            a{
+                color: #ffffff;
+                display: block;
+                text-align: center;
+                padding-top: 10px;
+               
+                &:hover{
+                    color: red;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    ul li.active a{
+        color: red;
+        background-color: transparent;
+    }
+ }
+ .img-fluid {
+    max-width: 100%;
+    height: auto;
+    margin: 0px 100px 30px 130px;
+}
+.paragraph{
+    margin: 0px 100px 30px 130px;
+}
+.para{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.header{
+    padding-bottom: 30px;
+}
+.food-header{
+    padding-bottom: 10px;
+    color: blue;
+}
+
+
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
