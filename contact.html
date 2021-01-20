@@ -32,6 +32,7 @@
             <div class="row">
                 <div class="col">
                     <h3>BHACCASYONIZTAS BEACH RESORT</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat odit voluptate error itaque, quis a dolor impedit eligendi explicabo, sint incidunt aliquam sit fugit quibusdam, quam at obcaecati ipsum voluptas.</p>
                     <p>
                         <span>ADDRESS:</span>
                         123 Lorem Ipsum Cove, Sed Ut City, LI 12345
@@ -46,19 +47,33 @@
                     </p>
                 </div>
                 <div class="col">
-                   <div class="row mb-5">
-                       <div class="col">
-                           <input type="text" form="form-control" placeholder="Name">
-                       </div>
-                       <div class="col">
-                            <input type="text" form="form-control" placeholder="Phone">
-                        </div>
-                   </div>
-
-                   <div class="form-group">
-                       <textarea rows="7" class="form-control" placeholder="Messages"></textarea>
-                   </div>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="text" class="form-control" id="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="checkin">Checkin-Date</label>
+                        <input type="date" class="form-control" id="checkin">
+                    </div>
+                    <div class="form-group">
+                        <label for="checkout">Checkout-Date</label>
+                        <input type="date" class="form-control" id="checkout">
+                    </div>
+                    <div class="form-group">
+                        <label for="room">Rooms</label>
+                        <select class="form-control" id="room">
+                            <option>Single room</option>
+                            <option>Double room</option>
+                            <option selected>Family room</option>
+                        </select>
+                    </div>
+                  
                    <button class="btn btn-primary">Submit</button>
+                   <button class="btn btn-secondary">Cancel</button>
                 </div>
                 
             </div>
@@ -71,5 +86,6 @@
             <p>Copyright to Group4</p>
         </div>
     </div>
+
 </body>
 </html>
