@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BeachResort</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -29,54 +29,82 @@
         <!-- hero -->
         <div class="hero container">
             <h1 class="header">CONTACT</h1>
-            <div class="row">
-                <div class="col">
-                    <h3>BHACCASYONIZTAS BEACH RESORT</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat odit voluptate error itaque, quis a dolor impedit eligendi explicabo, sint incidunt aliquam sit fugit quibusdam, quam at obcaecati ipsum voluptas.</p>
-                    <p>
-                        <span>ADDRESS:</span>
-                        123 Lorem Ipsum Cove, Sed Ut City, LI 12345
-                    </p>
-                    <p>
-                        <span>TELEPHONE NUMBER:</span>
-                        1-800-999-9999
-                    </p>
-                    <p>
-                        <span>FAX NUMBER:</span>
-                        1-800-111-1111
-                    </p>
-                </div>
-                <div class="col">
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" class="form-control" id="name">
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone</label>
-                        <input type="text" class="form-control" id="phone">
-                    </div>
-                    <div class="form-group">
-                        <label for="checkin">Checkin-Date</label>
-                        <input type="date" class="form-control" id="checkin">
-                    </div>
-                    <div class="form-group">
-                        <label for="checkout">Checkout-Date</label>
-                        <input type="date" class="form-control" id="checkout">
-                    </div>
-                    <div class="form-group">
-                        <label for="room">Rooms</label>
-                        <select class="form-control" id="room">
-                            <option>Single room</option>
-                            <option>Double room</option>
-                            <option selected>Family room</option>
-                        </select>
-                    </div>
-                  
-                   <button class="btn btn-primary">Submit</button>
-                   <button class="btn btn-secondary">Cancel</button>
-                </div>
-                
+            <div>
+                <h3>BHACCASYONIZTAS BEACH RESORT</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat odit voluptate error itaque, quis a dolor impedit eligendi explicabo, sint incidunt aliquam sit fugit quibusdam, quam at obcaecati ipsum voluptas.</p>
+                <p>
+                    <span>ADDRESS:</span>
+                    123 Lorem Ipsum Cove, Sed Ut City, LI 12345
+                </p>
+                <p>
+                    <span>TELEPHONE NUMBER:</span>
+                    1-800-999-9999
+                </p>
+                <p>
+                    <span>FAX NUMBER:</span>
+                    1-800-111-1111
+                </p>
             </div>
+            <div>
+                <table>
+                    <tr>
+                        <td>
+                            <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                                <div>
+                                    <label for="">Full Name</label>
+                                    <input type="text" name="fullname" id="fullname" required=required>
+                                </div>
+                                <div>
+                                    <label for="">Phone</label>
+                                    <input type="text" name="phone" id="phone" required=required>
+                                </div>
+                                <div>
+                                    <label for="">NRC</label>
+                                    <input type="text" name="nrc" id="nrc" required=required>
+                                </div>
+                                <div>
+                                    <label for="">Booking Date</label>
+                                    <input type="date" name="bookingdate" id="bookingdate" required=required>
+                                </div>
+                                <div>
+                                    <label for="">Rooms</label>
+                                    <!-- <input type="text" name="rooms" id="rooms"> -->
+                                    <select name="room" id="rooms">
+                                        <option>Single room</option>
+                                        <option>Double room</option>
+                                        <option selected>Family room</option>
+                                        <option>FIRST CLASS ROOM</option>
+                                        <option>DELUXE ROOM</option>
+                                        <option>SUITE ROOM</option>
+                                        <option>BANGALO</option>
+                                    </select>
+                                </div>
+                                <div class="form-action-buttons">
+                                    <input type="submit" value="Submit">
+                                </div>
+                            </form>
+                        </td>
+                        <td>
+                            <table class="list" id="customerlist">
+                                <thead>
+                                    <tr>
+                                        <th>Full Name</th>
+                                        <th>Phone</th>
+                                        <th>NRC</th>
+                                        <th>Booking Date</th>
+                                        <th>Rooms</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
         </div>
         
         <hr>
@@ -86,6 +114,9 @@
             <p>Copyright to Group4</p>
         </div>
     </div>
-
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
